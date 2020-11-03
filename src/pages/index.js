@@ -9,25 +9,7 @@ import IdeasAndTips from "../components/ideas-and-tips"
 import ProductTypes from "../components/product-types"
 import Products from "../components/products"
 
-function initScrollListener() {
-    let logoElm;
-    if (document) {
-        document.body.onscroll = function() {
-            if(!logoElm) {
-                logoElm = document.querySelector(".brand_logo");
-            }
-            const scrollTop = document.documentElement.scrollTop;
-            if (scrollTop < 70) {
-                logoElm.style.backgroundSize = "85%";
-            } else {
-                logoElm.style.backgroundSize = "65%";
-            }
-        };
-    }
-}
-
 const IndexPage = () => {
-    initScrollListener();
     return (<Layout>
         <SEO title="Home" />
         <HeroImage />
