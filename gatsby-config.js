@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Lizol Surface Cleaner - Disinfectant Surface Cleaning Solutions | Lizol India`,
+    description: `Lizol disinfectant surface and floor cleaners come with a distinctive formulation that kills 99.9% germs & viruses like H1N1 and RSV to keep your home fresh and germ-free. It gives 10 times better cleaning and germ-kill than ordinary phenyls & detergents.`,
+    author: `@vinotb`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/lysol-favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

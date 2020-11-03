@@ -1,0 +1,60 @@
+.tips-container {
+    max-width: 94pc;
+    margin: 0 auto;
+    padding: 4pc 2pc;
+}
+
+.tips-list-container {
+    width: 100%;
+}
+
+.tips-list-container>.tips-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    margin-bottom: -2pc;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tips-list-container>.tips-list .tips-item {
+    margin-bottom: 2pc;
+}
+
+.tips-list-container>.tips-list .tips-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tips-list-container>.tips-list .tips-item .title {
+    margin: 1pc 0 30px;
+    color: #004567;
+    display: block;
+    padding-bottom: 24px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.tips-list-container>.tips-list .tips-item .description {
+    margin-bottom: 25px;
+}
+
+.tips-list-container>.tips-list .tips-item a {
+    font-size: 1rem;
+    color: #d22841;
+    border-bottom: 1px dashed #d22841;
+    text-decoration: none;
+}
+
+.tips-list-container>.tips-list .tips-item a:after {
+    content: "\2192";
+    margin: 0 8px;
+    position: absolute;
+}

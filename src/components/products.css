@@ -1,0 +1,28 @@
+.products-container {
+    max-width: 94pc;
+    margin: 0 auto;
+    padding: 1pc 2pc;
+}
+
+.products-container h2 {
+    color: #004567;
+    font-size: 1.5625rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.products-container article {
+    margin: 0 auto 3pc;
+    text-align: center;
+}
+
+.products-container .product-item a {
+    color: #004567;
+    font-size: 1.5625rem;
+    text-align: center;
+    padding-bottom: 24px;
+    margin-bottom: 0;
+    width: 100%;
+    font-weight: 700;
+    text-decoration: none;
+}

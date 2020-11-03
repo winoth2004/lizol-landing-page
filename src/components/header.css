@@ -1,0 +1,20 @@
+header {
+    background-color: #004567;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 70px;
+    z-index: 2;
+}
+
+.brand_logo {
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    margin: 2% 0px 0px 10%;
+    transition: background-size 500ms ease-in;
+    -moz-transition: background-size 500ms ease-in;
+    -web-kit-transition: background-size 500ms ease-in;
+}
