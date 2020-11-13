@@ -27,8 +27,10 @@ const renderProductItem = (imageInfo) => {
     if (productInfo) {
         return (
             <article className="product-item" key={productInfo.key}>
-                <Img fluid={imageInfo} />
-                <a href={productInfo.link}>{productInfo.title}</a>
+                <a href={productInfo.link}>
+                    <Img fluid={imageInfo} />
+                    <label>{productInfo.title}</label>
+                </a>
             </article>
         );
     }
