@@ -36,7 +36,7 @@ module.exports = {
         // The property ID; the tracking code won't be generated without it
         trackingId: process.env.GATSBY_GOOGLE_TRACKING_ID,
         // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
+        head: true,
         // Enables Google Optimize using your container Id
         optimizeId: process.env.GATSBY_GOOGLE_OPTIMIZE_ID,
         // Enables Google Optimize Experiment ID
