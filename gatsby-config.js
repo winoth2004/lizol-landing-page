@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `lizol-landingpage-gatsby`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
@@ -30,7 +30,7 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    /*{
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
@@ -47,8 +47,8 @@ module.exports = {
         defer: false,
         cookieDomain: process.env.GATSBY_WEB_DOMAIN,
       },
-    },*/
-    {
+    },
+    /*{
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
@@ -65,6 +65,6 @@ module.exports = {
           respectDNT: false,
         },
       },
-    },
+    },*/
   ],
 }
