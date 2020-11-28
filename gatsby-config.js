@@ -48,7 +48,7 @@ module.exports = {
         cookieDomain: process.env.GATSBY_WEB_DOMAIN,
       },
     },
-    /*{
+    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
@@ -65,6 +65,6 @@ module.exports = {
           respectDNT: false,
         },
       },
-    },*/
+    },
   ],
 }
