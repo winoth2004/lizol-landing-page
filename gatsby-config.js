@@ -31,24 +31,6 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: process.env.GATSBY_GOOGLE_TRACKING_ID,
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: true,
-        // Enables Google Optimize using your container Id
-        optimizeId: process.env.GATSBY_GOOGLE_OPTIMIZE_ID,
-        // Enables Google Optimize Experiment ID
-        experimentId: process.env.GATSBY_GOOGLE_EXPERIMENT_ID,
-        // Set Variation ID. 0 for original 1,2,3....
-        variationId: "0",
-        // Defers execution of google analytics script after page load
-        defer: false,
-        cookieDomain: process.env.GATSBY_WEB_DOMAIN,
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
@@ -64,6 +46,24 @@ module.exports = {
           head: true,
           respectDNT: false,
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: process.env.GATSBY_GOOGLE_TRACKING_ID,
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Enables Google Optimize using your container Id
+        optimizeId: process.env.GATSBY_GOOGLE_OPTIMIZE_ID,
+        // Enables Google Optimize Experiment ID
+        experimentId: process.env.GATSBY_GOOGLE_EXPERIMENT_ID,
+        // Set Variation ID. 0 for original 1,2,3....
+        variationId: "0",
+        // Defers execution of google analytics script after page load
+        defer: false,
+        cookieDomain: process.env.GATSBY_WEB_DOMAIN,
       },
     },
   ],
