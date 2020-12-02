@@ -5,28 +5,41 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import React, {useEffect} from "react"
 import PropTypes from "prop-types"
+import {Helmet} from "react-helmet";
 
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+import {initPageEvent} from "../util/page-latency-event"
 
-  return (
-    <>
-        <Header />
-        <div
-            style={{
-            margin: `70px auto 0`,
-            maxWidth: 960,
-            padding: `0`,
-            }}
-        >
-        <main>{children}</main>
-        </div>
-    </>
-  )
+const Layout = ({ children }) => {
+    useEffect(() => {
+        initPageEvent();
+    });
+
+    return (
+        <>
+            <Helmet>
+                <script type="text/javascript">{`
+                    if (window) {
+                        window.t0 = (new Date());
+                    }
+                `}</script>
+            </Helmet>
+            <Header />
+            <div
+                style={{
+                margin: `70px auto 0`,
+                maxWidth: 960,
+                padding: `0`,
+                }}
+            >
+            <main>{children}</main>
+            </div>
+        </>
+    )
 }
 
 Layout.propTypes = {
