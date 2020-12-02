@@ -8,14 +8,10 @@ export function initPageEvent() {
     }
 }
 
-const postMetrics = (function() {
+const postMetrics = function(action, parameterObject) {
     if (window && gtag) {
-        return ((action, parameterObject) => {
-            gtag('event', action, parameterObject);
-        });
+        gtag('event', action, parameterObject);
     } else {
-        return (() => {
-            console.log(`Post metrics arguments ${JSON.stringify(arguments)}`);
-        });
+        console.log(`Post metrics arguments ${JSON.stringify(arguments)}`);
     }
-})();
+};
