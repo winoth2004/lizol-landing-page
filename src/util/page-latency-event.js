@@ -1,9 +1,8 @@
 export function initPageEvent() {
     if(window && document) {
-        postMetrics('timing_complete', {
+        postMetrics('metrics', {
             'name'           : 'page_component_load',
-            'value'          : (window.t0 ? ((new Date()) - window.t0) : 0),
-            'event_category' : 'JS Dependencies'
+            'value'          : (window.t0 ? ((new Date()) - window.t0) : 0)
         })
     }
 }
