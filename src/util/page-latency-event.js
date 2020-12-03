@@ -11,7 +11,7 @@ export function initPageEvent() {
                 console.log(`Name is ${entry.name} and startTime is ${entry.startTime}`);
             });
         });
-        performanceObserver.observe({ type: ['paint'] });
+        performanceObserver.observe({ type: ['paint'], buffered: true });
     }
 }
 
