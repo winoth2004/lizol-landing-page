@@ -12,9 +12,10 @@ import {Helmet} from "react-helmet";
 import Header from "./header"
 import "./layout.css"
 
-import {initPageEvent} from "../util/page-latency-event"
+import {initPageEvent, initPOEvents} from "../util/page-latency-event"
 
 const Layout = ({ children }) => {
+    initPOEvents();
     useEffect(() => {
         initPageEvent();
     });
