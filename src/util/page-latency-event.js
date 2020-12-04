@@ -8,13 +8,13 @@ const lcp = {
 };
 
 export function initPageEvent() {
-    if (window && document) {
+    if (typeof window !== "undefined") {
         postMetrics('page_component_load', (window.t0 ? ((new Date()) - window.t0) : 0));
     }
 }
 
 export function initPOEvents() {
-    if (window && document) {
+    if (typeof window !== "undefined") {
         const performance = window.performance;
         if (performance && !!performance.getEntriesByType &&
             !!performance.now && !!performance.mark) {
