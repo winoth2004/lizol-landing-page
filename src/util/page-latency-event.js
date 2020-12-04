@@ -30,10 +30,18 @@ export function initPOEvents() {
     }
 }
 
+// Private methods 
 const initLayoutShift = (performanceEntries) => {
     const lastEntry = performanceEntries.pop();
     if (lastEntry && !lastEntry.hadRecentInput && lastEntry.value) {
         cls.value += lastEntry.value;
+    }
+};
+
+const initLargestContentfulPaint = (performanceEntries) => {
+    const lastEntry = performanceEntries.pop();
+    if (lastEntry) {
+        lcp.value = lastEntry.renderTime || lastEntry.loadTime;
     }
 };
 
@@ -51,7 +59,7 @@ const initFirstInputDelay = (performanceEntries) => {
     if (poList['cls'] && typeof poList['cls'].takeRecords === 'function') {
         poList['cls'].takeRecords();
     }
-    postMetrics('cumulative_layout', lcp.value);
+    postMetrics('cumulative_layout', cls.value);
 };
 
 /**
@@ -67,13 +75,6 @@ const initFirstPaint = (performanceEntries) => {
             poDisconnect('paint');
         }
     });
-};
-
-const initLargestContentfulPaint = (performanceEntries) => {
-    const lastEntry = performanceEntries.pop();
-    if (lastEntry) {
-        lcp.value = lastEntry.renderTime || lastEntry.loadTime;
-    }
 };
 
 const initNavigationTiming = () => {
