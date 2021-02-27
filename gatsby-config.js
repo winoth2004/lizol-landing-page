@@ -45,6 +45,7 @@ module.exports = {
         pluginConfig: {
           head: true,
           respectDNT: false,
+          siteSpeedSampleRate: 100,
         },
       },
     },
