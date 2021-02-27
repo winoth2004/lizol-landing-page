@@ -40,12 +40,12 @@ module.exports = {
         gtagConfig: {
           anonymize_ip: false,
           cookie_expires: 0,
-          send_page_view: true
+          send_page_view: true,
+          site_speed_sample_rate: 100
         },
         pluginConfig: {
           head: true,
           respectDNT: false,
-          siteSpeedSampleRate: 100,
         },
       },
     },
