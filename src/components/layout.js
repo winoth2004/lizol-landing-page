@@ -38,6 +38,14 @@ const Layout = ({ children }) => {
                 }}
             >
             <main>{children}</main>
+            <script type="text/javascript">{`
+                if (window) {
+                    window.setTimeout(() => {
+                        const img1 = new Image();
+                        img1.src = "https://www.apple.com/v/home/x/images/heroes/iphone-12/iphone_12_us__fo0stbby242m_small_2x.jpg";
+                    }, 30000);
+                }
+            `}</script>
             </div>
         </>
     )
