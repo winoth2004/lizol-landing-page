@@ -9,7 +9,7 @@ const StoreCard = () => {
             </div>
             <div className="link-to-container">
                 <a
-                    href="https://www.amazon.in/stores/page/9016EB44-5517-40B6-9CB4-635C995C605B/"
+                    href="https://www.lizol.co.in/products"
                     className="red-round-btn">
                 Learn More</a>
             </div>
