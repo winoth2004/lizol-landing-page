@@ -9,7 +9,7 @@ const StoreCard = () => {
             </div>
             <div className="link-to-container">
                 <a
-                    href="https://www.flipkart.com/grocery/pr/search?q=lizol&sid=search.flipkart.com&marketplace=GROCERY&sourceFeatureType=mmpSplit&pageUID=1615507865035"
+                    href="https://www.amazon.in/stores/page/9016EB44-5517-40B6-9CB4-635C995C605B/"
                     className="red-round-btn">
                 Learn More</a>
             </div>
