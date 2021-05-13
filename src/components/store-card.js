@@ -9,7 +9,7 @@ const StoreCard = () => {
             </div>
             <div className="link-to-container">
                 <a
-                    href="https://www.lizol.co.in/products"
+                    href="https://test.d13hs6xlt52ib3.amplifyapp.com/"
                     className="red-round-btn">
                 Learn More</a>
             </div>
