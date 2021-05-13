@@ -11,7 +11,7 @@ const StoreCard = () => {
                 <a
                     href="https://test.d13hs6xlt52ib3.amplifyapp.com/"
                     className="red-round-btn">
-                Learn More</a>
+                Learn More </a>
             </div>
         </section>);
 }
