@@ -1,0 +1,13 @@
+customHeaders:
+  - pattern: '*.jpg'
+    headers:
+      - key: 'Access-Control-Allow-Origin'
+        value: '*'
+      - key: 'Cache-Control'
+        value: 'max-age=31536000'
+  - pattern: '*.js'
+    headers:
+      - key: 'Access-Control-Allow-Origin'
+        value: '*'
+      - key: 'Cache-Control'
+        value: 'max-age=31536000'
